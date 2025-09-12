@@ -25,11 +25,11 @@ audio-transcription/
    ```sh
    npm install
    ```
-2. Create a `.env` file in root with:
-   ```env
-   PORT=3000
-   MONGODB_URI=mongodb://localhost:27017/audio-transcription
+2. Copy the provided `.env.example` to `.env` in the root directory:
+   ```sh
+   cp .env.example .env
    ```
+   Then, edit `.env` if you need to change any environment variables.
 3. Start dev server:
    ```sh
    npm run dev
