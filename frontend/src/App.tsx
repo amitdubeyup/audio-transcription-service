@@ -11,10 +11,13 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const fetchTranscriptions = async () => {
+    console.log('[App] Fetching transcriptions from API');
     try {
       const res = await axios.get(API_URL);
+      console.log('[App] Transcriptions fetched:', res.data);
       setTranscriptions(res.data);
-    } catch {
+    } catch (err) {
+      console.error('[App] Failed to fetch transcriptions:', err);
       setMessage('Failed to fetch transcriptions');
     }
   };
@@ -27,12 +30,15 @@ function App() {
     e.preventDefault();
     setMessage('');
     setLoading(true);
+    console.log('[App] Submitting audioUrl:', audioUrl);
     try {
       const res = await axios.post(API_URL, { audioUrl });
+      console.log('[App] Transcription created, response:', res.data);
       setMessage(`Transcription created! ID: ${res.data.id}`);
       setAudioUrl('');
       fetchTranscriptions();
     } catch (err: any) {
+      console.error('[App] Error creating transcription:', err);
       setMessage(err?.response?.data?.error || 'Error creating transcription');
     } finally {
       setLoading(false);

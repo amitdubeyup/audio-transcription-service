@@ -12,6 +12,7 @@ interface Props {
 }
 
 const TranscriptionList: React.FC<Props> = ({ transcriptions }) => {
+  console.log('[TranscriptionList] Rendering with transcriptions:', transcriptions);
   if (!transcriptions.length)
     return <div className="text-center text-gray-500 italic mt-8">No transcriptions found.</div>;
   return (
