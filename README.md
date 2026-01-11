@@ -1,8 +1,8 @@
-# audio-transcription
+# audio-transcription-service
 
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 
-├── package.json, tsconfig.json, jest.config.js   # Project configs (root)
+![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
 
 ## 🚀 Tech Stack
 
@@ -21,8 +21,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/amitdubeyup/audio-transcription.git
-cd audio-transcription
+git clone https://github.com/amitdubeyup/audio-transcription-service.git
+cd audio-transcription-service
 
 # Install dependencies
 npm install
@@ -64,7 +64,7 @@ npm test
 ## 📁 Project Structure
 
 ```
-audio-transcription/
+audio-transcription-service/
 ├── src/
 ├── dist/
 ├── frontend/
