@@ -12,9 +12,6 @@ Automation utility built with Express, MongoDB designed to streamline workflows 
 ## 🛠️ Tech Stack
 *   **Node.js, MongoDB, Express, TypeScript**
 
-## 👨‍💻 Lead Maintainer
-[@amitdubeyup](https://github.com/amitdubeyup)
-
 ## 📦 Installation
 
 1.  **Clone the repository**:
@@ -29,6 +26,9 @@ Automation utility built with Express, MongoDB designed to streamline workflows 
     ```bash
     npm start    # or python app.py
     ```
+
+## 👨‍💻 Lead Maintainer
+[@amitdubeyup](https://github.com/amitdubeyup)
 
 ## 📄 License
 This project is licensed under the **MIT License**.
